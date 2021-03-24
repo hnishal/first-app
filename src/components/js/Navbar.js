@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavDropdown, Nav, Form, Button, FormControl } from 'react-bootstrap'
+import { Navbar, NavDropdown, Nav, Form, Button, FormControl } from 'react-bootstrap';
 import image5 from '../../image/5.jpg'
 const NavbarComponent = () =>
 (

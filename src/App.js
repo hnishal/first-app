@@ -35,7 +35,9 @@ const App = () => (
     <CardComponent3 />
     <h1 style={{ marginTop: "90px", textAlign: "center", marginBottom: "90px" }}>Join Our Community</h1>
     <ButtonComponent />
-    <Footer />
-  </div>
+    <div style={{backgroundColor:"black"}}>
+      <div><Footer /></div>
+    </div>
+    </div>
 );
 export default App;

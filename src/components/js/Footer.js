@@ -1,77 +1,75 @@
-// import React from "react"; 
-// import { 
-// Box, 
-// Container, 
-// Row, 
-// Column, 
-// FooterLink, 
-// Heading, 
-// } from "./FooterStyles"; 
+import React from "react"; 
+import { 
+Container, 
+Row, 
+Col
+} from "react-bootstrap"; 
 
-// const Footer = () => { 
-// return ( 
-// 	<Box> 
-// 	<h1 style={{ color: "green", 
-// 				textAlign: "center", 
-// 				marginTop: "-50px" }}> 
-// 		GeeksforGeeks: A Computer Science Portal for Geeks 
-// 	</h1> 
-// 	<Container> 
-// 		<Row> 
-// 		<Column> 
-// 			<Heading>About Us</Heading> 
-// 			<FooterLink href="#">Aim</FooterLink> 
-// 			<FooterLink href="#">Vision</FooterLink> 
-// 			<FooterLink href="#">Testimonials</FooterLink> 
-// 		</Column> 
-// 		<Column> 
-// 			<Heading>Services</Heading> 
-// 			<FooterLink href="#">Writing</FooterLink> 
-// 			<FooterLink href="#">Internships</FooterLink> 
-// 			<FooterLink href="#">Coding</FooterLink> 
-// 			<FooterLink href="#">Teaching</FooterLink> 
-// 		</Column> 
-// 		<Column> 
-// 			<Heading>Contact Us</Heading> 
-// 			<FooterLink href="#">Uttar Pradesh</FooterLink> 
-// 			<FooterLink href="#">Ahemdabad</FooterLink> 
-// 			<FooterLink href="#">Indore</FooterLink> 
-// 			<FooterLink href="#">Mumbai</FooterLink> 
-// 		</Column> 
-// 		<Column> 
-// 			<Heading>Social Media</Heading> 
-// 			<FooterLink href="#"> 
-// 			<i className="fab fa-facebook-f"> 
-// 				<span style={{ marginLeft: "10px" }}> 
-// 				Facebook 
-// 				</span> 
-// 			</i> 
-// 			</FooterLink> 
-// 			<FooterLink href="#"> 
-// 			<i className="fab fa-instagram"> 
-// 				<span style={{ marginLeft: "10px" }}> 
-// 				Instagram 
-// 				</span> 
-// 			</i> 
-// 			</FooterLink> 
-// 			<FooterLink href="#"> 
-// 			<i className="fab fa-twitter"> 
-// 				<span style={{ marginLeft: "10px" }}> 
-// 				Twitter 
-// 				</span> 
-// 			</i> 
-// 			</FooterLink> 
-// 			<FooterLink href="#"> 
-// 			<i className="fab fa-youtube"> 
-// 				<span style={{ marginLeft: "10px" }}> 
-// 				Youtube 
-// 				</span> 
-// 			</i> 
-// 			</FooterLink> 
-// 		</Column> 
-// 		</Row> 
-// 	</Container> 
-// 	</Box> 
-// ); 
-// }; 
-// export default Footer; 
+const Footer = () => { 
+return ( 
+	<div style={{backgroundColor:"black", marginTop:"160px",marginBottom:"30px"}} > 
+	<h1 style={{ color: "green", 
+				textAlign: "center", 
+				marginTop: "-50px",
+				padding:"50px" }}> 
+		Feelancing provide us opportunity as well as experience
+	</h1> 
+	<Container> 
+		<Row> 
+		<Col > 
+			<h3 >About Us</h3> 
+			<a style={{display:"flex"}}href="#">Aim</a> 
+			<a style={{display:"flex"}}href="#">Vision</a> 
+			<a style={{display:"flex"}}href="#">Testimonials</a> 
+		</Col> 
+		<Col> 
+			<h3>Services</h3> 
+			<a style={{display:"flex"}} href="#">Writing</a> 
+			<a style={{display:"flex"}} href="#">Internships</a> 
+			<a style={{display:"flex"}} href="#">Coding</a> 
+			<a style={{display:"flex"}}href="#">Teaching</a> 
+		</Col> 
+		<Col> 
+			<h3>Contact Us</h3> 
+			<a style={{display:"flex" }} href="#">Uttar Pradesh</a> 
+			<a style={{display:"flex"}}href="#">Ahemdabad</a> 
+			<a style={{display:"flex"}}href="#">Indore</a> 
+			<a style={{display:"flex",paddingBottom:"20px"}}href="#">Mumbai</a> 
+		</Col> 
+		<Col> 
+			<h3>Social Media</h3> 
+			<a style={{display:"flex"}} href="#"> 
+			<i className="fab fa-facebook-f"> 
+				<span style={{ marginLeft: "10px" }}> 
+				Facebook 
+				</span> 
+			</i> 
+			</a> 
+			<a style={{display:"flex"}} href="#"> 
+			<i className="fab fa-instagram"> 
+				<span style={{ marginLeft: "10px" }}> 
+				Instagram 
+				</span> 
+			</i> 
+			</a> 
+			<a style={{display:"flex"}}href="#"> 
+			<i className="fab fa-twitter"> 
+				<span style={{ marginLeft: "10px" }}> 
+				Twitter 
+				</span> 
+			</i> 
+			</a> 
+			<a style={{display:"flex"}} href="#"> 
+			<i className="fab fa-youtube"> 
+				<span style={{ marginLeft: "10px" }}> 
+				Youtube 
+				</span> 
+			</i> 
+			</a> 
+		</Col> 
+		</Row> 
+	</Container> 
+	</div> 
+); 
+}; 
+export default Footer; 
