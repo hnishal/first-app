@@ -57,7 +57,7 @@ const CardComponent = () =>
             <Card>
                 <Card.Img className="img-10" variant="top" src={image10} />
                 <Card.Body>
-                    <Card.Title style={{ marginLeft: "60px" }}>ERP Solutions</Card.Title>
+                    <Card.Title style={{ marginLeft: "60px" }}>ERD Solutions</Card.Title>
 
                 </Card.Body>
 
