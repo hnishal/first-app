@@ -11,33 +11,37 @@ import ListComponent from './components/js/TopSkills';
 import CardComponent3 from './components/js/HireCard';
 import ButtonComponent from './components/js/Button';
 import Footer from './components/js/Footer';
+import LoginComponent from './components/js/Login';
+import {BrowserRouter, Switch, Redirect, Route} from 'react-router-dom';
+import HomeComponent from './components/js/Home';
 // import modelCompoenent from './components/js/modalLogin';
 
 //import { render } from '@testing-library/react';
 // App function is created which contains the html 
 // code that is displayed in the webpage 
-const myStyle = {
-  textAlign: "center",
-  marginTop: "130px"
-}
-const App = () => (
-  <div>
-    <NavbarComponent />
-    {/* <modelCompoenent/> */}
-    <CarouselComponent />
-    <h1 style={myStyle}>TOP CATEGORIES</h1>
-    <CardComponent />
-    <h1 style={myStyle}>How it Works</h1>
-    <CardComponent2 />
-    <h1 style={myStyle}>Browse Top Skills</h1>
-    <ListComponent />
-    <h1 style={myStyle}>Hire Flexibly</h1>
-    <CardComponent3 />
-    <h1 style={{ marginTop: "90px", textAlign: "center", marginBottom: "90px" }}>Join Our Community</h1>
-    <ButtonComponent />
-    <div style={{backgroundColor:"black"}}>
-      <div><Footer /></div>
+
+const App = () => {
+  const login = () => {
+    return (
+      <LoginComponent />
+    )
+  } 
+  const home = () => {
+    return(
+      <HomeComponent />
+    )
+  }
+  return(
+
+    <div>
+      
+    <BrowserRouter >
+    <Switch> 
+    <Route path = "/home" component = {home} />
+    <Route path = "/login" component = {login} />
+    <Redirect to = "/home" />
+    </Switch>
+    </BrowserRouter>
     </div>
-    </div>
-);
+);}
 export default App;
