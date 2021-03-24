@@ -49,7 +49,7 @@ const CardComponent = () =>
             <Card>
                 <Card.Img className="img-9" variant="top" src={image9} />
                 <Card.Body>
-                    <Card.Title style={{ marginLeft: "60px" }}>Healthcare</Card.Title>
+                    <Card.Title style={{ marginLeft: "60px" }}>Health-care</Card.Title>
 
                 </Card.Body>
 
