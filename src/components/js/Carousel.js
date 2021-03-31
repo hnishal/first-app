@@ -13,10 +13,6 @@ const NavbarComponent = () =>
         src={image1}
         alt="First slide"
       />
-      <Carousel.Caption>
-        <h3 className="caption">Your Work, Your Choice</h3>
-        <p>Hire the most in demand professionals</p>
-      </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
       <img
@@ -24,11 +20,6 @@ const NavbarComponent = () =>
         src={image2}
         alt="Second slide"
       />
-
-      <Carousel.Caption>
-        <h3>Hire or Work, your choice</h3>
-        <p>Take your project from top professionals</p>
-      </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
       <img
@@ -37,10 +28,6 @@ const NavbarComponent = () =>
         alt="Third slide"
       />
 
-      <Carousel.Caption>
-        <h3>Concept to Completion</h3>
-        <p>A path for your own success or opportunities for others.</p>
-      </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
 )

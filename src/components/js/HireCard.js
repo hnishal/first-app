@@ -5,43 +5,50 @@ import image17 from '../../image/17.png'
 import '../css/HireCard.css';
 const CardComponent3 = () =>
 (
-    <CardGroup style={{ marginTop: "190px" }}>
-        <Card style={{ width: '18rem', marginLeft: "400px", marginRight: "10px" }}>
-            <Card.Img class="img-17" variant="top" src={image16} />
+    <div class="row justify-content-center mt-5 pt-5">
+        <div class=" col-sm-8 col-lg-6 col-md-6">
+    <CardGroup>
+        <Card >
+            <Card.Img className="p-5" class=" mt-5 img-17" variant="top" src={image16} />
             <Card.Body>
-                <Card.Title style={{ marginLeft: "90px" }}>Contract</Card.Title>
+                <Card.Title className="text-center">Contract</Card.Title>
                 <Card.Text>
 
                 </Card.Text>
-                <ListGroup style={{ marginLeft: "20px" }} className="list-group-flush">
-                    <ListGroupItem >Add to your time as needed</ListGroupItem>
-                    <ListGroupItem >Convert to full-time anytime</ListGroupItem>
-                    <ListGroupItem >Convenient payment options</ListGroupItem>
+                <ListGroup  className="list-group-flush">
+                    <ListGroupItem className="text-center">Add to your time as needed</ListGroupItem>
+                    <ListGroupItem className="text-center">Convert to full-time anytime</ListGroupItem>
+                    <ListGroupItem className="text-center">Convenient payment options</ListGroupItem>
                 </ListGroup>
             </Card.Body>
+            <div className="text-center">
             <Card.Body>
-                <Button style={{ marginLeft: "60px" }} variant="primary ">Post a Contract Role</Button>
+                <Button className="m-3 text-center" variant="primary ">Post a Contract Role</Button>
             </Card.Body>
+            </div>
         </Card>
-        <Card style={{ width: '18rem', marginLeft: "10px", marginRight: "400px" }}>
-            <Card.Img class="img-16" variant="top" src={image17} />
+        <Card >
+            <Card.Img className="p-5" class="mt-5 img-16" variant="top" src={image17} />
             <Card.Body>
-                <Card.Title style={{ marginLeft: "90px" }}>Full Time</Card.Title>
+                <Card.Title className="text-center">Full Time</Card.Title>
                 <Card.Text>
 
                 </Card.Text>
-                <ListGroup style={{ marginLeft: "20px" }} className="list-group-flush">
-                    <ListGroupItem>Add best local professionals</ListGroupItem>
-                    <ListGroupItem>90 day money back gauarantee</ListGroupItem>
-                    <ListGroupItem>50% less than traditional staffing agency</ListGroupItem>
+                <ListGroup className="list-group-flush">
+                    <ListGroupItem className="text-center">Add best local professionals</ListGroupItem>
+                    <ListGroupItem className="text-center">90 day money back gauarantee</ListGroupItem>
+                    <ListGroupItem className="text-center">50% less than traditional staffing agency</ListGroupItem>
                 </ListGroup>
             </Card.Body>
+            <div className="text-center">
             <Card.Body>
-                <Button style={{ marginLeft: "60px" }} variant="primary ">Post a Full-Time Role</Button>
+                <Button className="text-center" className="m-3" variant="primary ">Post a Full-Time Role</Button>
             </Card.Body>
+            </div>
         </Card>
     </CardGroup>
-
+    </div>
+    </div>
 
 )
 

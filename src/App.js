@@ -14,16 +14,18 @@ import Footer from './components/js/Footer';
 import LoginComponent from './components/js/Login';
 import {BrowserRouter, Switch, Redirect, Route} from 'react-router-dom';
 import HomeComponent from './components/js/Home';
-// import modelCompoenent from './components/js/modalLogin';
+import SignupComponent from './components/js/Signup';
 
-//import { render } from '@testing-library/react';
-// App function is created which contains the html 
-// code that is displayed in the webpage 
 
 const App = () => {
   const login = () => {
     return (
       <LoginComponent />
+    )
+  } 
+  const Signup = () => {
+    return (
+      <SignupComponent />
     )
   } 
   const home = () => {
@@ -39,6 +41,7 @@ const App = () => {
     <Switch> 
     <Route path = "/home" component = {home} />
     <Route path = "/login" component = {login} />
+    <Route path='/Signup' component ={Signup}/>
     <Redirect to = "/home" />
     </Switch>
     </BrowserRouter>

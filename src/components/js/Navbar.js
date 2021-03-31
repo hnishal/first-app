@@ -2,8 +2,11 @@ import React from 'react';
 import { Navbar, NavDropdown, Nav, Form, Button, FormControl } from 'react-bootstrap';
 import image5 from '../../image/5.jpg'
 const NavbarComponent = () =>
-{ function url() {
+{ function loginurl() {
   window.location = 'http://localhost:3000/login';
+}
+function Signupurl() {
+  window.location = 'http://localhost:3000/Signup';
 }
   return (
   <Navbar bg="light" expand="lg">
@@ -28,8 +31,8 @@ const NavbarComponent = () =>
           <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
         </NavDropdown>
       </Nav>
-      <Button variant="outline-primary" className="mr-3" onClick={() =>{url()}}>Login</Button>{' '}
-      <Button variant="outline-primary">Sign-in</Button>{' '}
+      <Button variant="outline-primary" className="mr-3" onClick={() =>{loginurl()}}>Login</Button>{' '}
+      <Button variant="outline-primary" className="mr-3" onClick={() =>{Signupurl()}}>Sign-in</Button>{' '}
 
     </Navbar.Collapse>
   </Navbar>

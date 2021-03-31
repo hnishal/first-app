@@ -7,6 +7,7 @@ Col
 
 const Footer = () => { 
 return ( 
+		<div >
 	<div style={{backgroundColor:"black", marginTop:"160px",marginBottom:"30px"}} > 
 	<h1 style={{ color: "green", 
 				textAlign: "center", 
@@ -23,7 +24,7 @@ return (
 			<a style={{display:"flex"}}href="#">Testimonials</a> 
 		</Col> 
 		<Col> 
-			<h3>Services</h3> 
+			<h3>Our Services</h3> 
 			<a style={{display:"flex"}} href="#">Writing</a> 
 			<a style={{display:"flex"}} href="#">Internships</a> 
 			<a style={{display:"flex"}} href="#">Coding</a> 
@@ -36,7 +37,8 @@ return (
 			<a style={{display:"flex"}}href="#">Indore</a> 
 			<a style={{display:"flex",paddingBottom:"20px"}}href="#">Mumbai</a> 
 		</Col> 
-		<Col> 
+		<div className="d-none  d-md-block">
+		<Col  > 
 			<h3>Social Media</h3> 
 			<a style={{display:"flex"}} href="#"> 
 			<i className="fab fa-facebook-f"> 
@@ -67,9 +69,11 @@ return (
 			</i> 
 			</a> 
 		</Col> 
+		</div>
 		</Row> 
 	</Container> 
 	</div> 
+	</div>
 ); 
 }; 
 export default Footer; 

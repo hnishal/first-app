@@ -1,8 +1,4 @@
 import React from 'react';
-
-// import Jumbotron from 'react-bootstrap/Jumbotron';
-// import Container from 'react-bootstrap/Container';
-// import Button from 'react-bootstrap/Button';
 import NavbarComponent from './Navbar';
 import CarouselComponent from './Carousel';
 import CardComponent from './Card';
@@ -13,24 +9,23 @@ import ButtonComponent from './Button';
 import Footer from './Footer';
 
 const myStyle = {
-    textAlign: "center",
-    marginTop: "130px"
+    
+    marginTop: "10%"
   }
 const HomeComponent = () => {
     return(
-        <div>
+        <div className="overflow-hidden">
     <NavbarComponent />
-    {/* <modelCompoenent/> */}
     <CarouselComponent />
-    <h1 style={myStyle}>TOP CATEGORIES</h1>
+    <h1 className="text-center " style={myStyle}>TOP CATEGORIES</h1>
     <CardComponent />
-    <h1 style={myStyle}>How it Works</h1>
+    <h1 className="text-center" style={myStyle}>How it Works</h1>
     <CardComponent2 />
-    <h1 style={myStyle}>Browse Top Skills</h1>
+    <h1 className="text-center d-none d-lg-block" style={myStyle}>Browse Top Skills</h1>
     <ListComponent />
-    <h1 style={myStyle}>Hire Flexibly</h1>
+    <h1 className="text-center" style={myStyle}>Hire Flexibly</h1>
     <CardComponent3 />
-    <h1 style={{ marginTop: "90px", textAlign: "center", marginBottom: "90px" }}>Join Our Community</h1>
+    <h1 className="text-center"style={myStyle}>Join Our Community</h1>
     <ButtonComponent />
     <div style={{backgroundColor:"black"}}>
       <div><Footer /></div>

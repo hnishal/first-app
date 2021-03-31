@@ -1,29 +1,43 @@
 import React from 'react';
-import {Form, Button} from 'react-bootstrap';
-const LoginComponent = () =>
-{return (
-    <Form>
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
-  </Form.Group>
+import { Form, Button } from 'react-bootstrap';
+import '../css/Login.css'
+const LoginComponent = () => {
+ return (
+    <div class="row justify-content-center">
+      <div class="col-md-4 ">
+        
+     <form>
+                <h1 className="text-center">Log In</h1>
 
-  <Form.Group controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
-  </Form.Group>
-  <Form.Group controlId="formBasicCheckbox" style = {{display: "flex"}}>
-    <Form.Check type="checkbox" label="Remember me" />
-    <a href="#" style = {{marginLeft: "48px"}}>Forgot Password?</a>
-  </Form.Group>
-  <Button variant="primary" type="submit">
-    Login
-  </Button>
-</Form>
+                <div className="form-group">
+                    <label>Email address</label>
+                    <input type="email" className="form-control" placeholder="Enter email" />
+                </div>
 
-)}
+                <div className="form-group">
+                    <label>Password</label>
+                    <input type="password" className="form-control" placeholder="Enter password" />
+                </div>
+
+                <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
+
+                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                <p className="forgot-password text-right">
+                    <a href="#"> Forgot password?</a>
+                </p>
+                <p className="forgot-password text-right">
+                    Don't have any account <a href='./Signup' >Sign up</a>
+                </p>
+            </form>
+            </div>
+            </div>
+
+  )
+}
 
 export default LoginComponent;
