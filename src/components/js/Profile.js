@@ -3,6 +3,7 @@ import { Nav, Navbar, NavDropdown, Card, Button, Form, Col } from 'react-bootstr
 import NavbarComponent from './Navbar';
 import image18 from '../../image/18.jpg';
 import '../css/Profile.css';
+import Footer from './Footer';
 const ProfileComponent = () => {
     return <div class="overflow-hidden">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -278,6 +279,7 @@ const ProfileComponent = () => {
                 </Card>
             </div>
             </div>
+            <Footer/>
     </div>
 
 

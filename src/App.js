@@ -1,8 +1,4 @@
 import React from 'react';
-
-// import Jumbotron from 'react-bootstrap/Jumbotron';
-// import Container from 'react-bootstrap/Container';
-// import Button from 'react-bootstrap/Button';
 import NavbarComponent from './components/js/Navbar';
 import CarouselComponent from './components/js/Carousel';
 import CardComponent from './components/js/Card';
@@ -10,7 +6,6 @@ import CardComponent2 from './components/js/DisableCard';
 import ListComponent from './components/js/TopSkills';
 import CardComponent3 from './components/js/HireCard';
 import ButtonComponent from './components/js/Button';
-import Footer from './components/js/Footer';
 import LoginComponent from './components/js/Login';
 import {BrowserRouter, Switch, Redirect, Route} from 'react-router-dom';
 import HomeComponent from './components/js/Home';
@@ -19,7 +14,6 @@ import ProfileComponent from './components/js/Profile';
 import DashboardComponent from './components/js/Dashboard';
 import ProfileformComponent from './components/js/Settings';
 import PasswordComponent from './components/js/Password';
-
 const App = () => {
   const login = () => {
     return (
@@ -72,6 +66,7 @@ const App = () => {
     <Redirect to = "/home" />
     </Switch>
     </BrowserRouter>
+  
     </div>
 );}
 export default App;

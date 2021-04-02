@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button, Col, Card } from 'react-bootstrap';
-import '../css/Settings.css'
+import '../css/Settings.css';
+import Footer from './Footer';
 const ProfileformComponent = () => {
    function passwordurl(event) {
      event.preventDefault();
@@ -81,6 +82,9 @@ const ProfileformComponent = () => {
   </Card.Body>
 </Card>
 </div>
+</div>
+<div className="mt-5">
+<Footer/>
 </div>
 </div>
  )
