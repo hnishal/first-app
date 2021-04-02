@@ -2,6 +2,10 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import '../css/Login.css'
 const LoginComponent = () => {
+    function profileurl(event) {
+        event.preventDefault();
+        window.location = 'http://localhost:3000/profile';
+      }
  return (
     <div class="row justify-content-center">
       <div class="col-md-4 ">
@@ -26,7 +30,7 @@ const LoginComponent = () => {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                <button type="submit" className="btn btn-primary btn-block" onClick={(event) =>{profileurl(event)}}>Submit</button>
                 <p className="forgot-password text-right">
                     <a href="#"> Forgot password?</a>
                 </p>

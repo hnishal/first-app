@@ -15,7 +15,10 @@ import LoginComponent from './components/js/Login';
 import {BrowserRouter, Switch, Redirect, Route} from 'react-router-dom';
 import HomeComponent from './components/js/Home';
 import SignupComponent from './components/js/Signup';
-
+import ProfileComponent from './components/js/Profile';
+import DashboardComponent from './components/js/Dashboard';
+import ProfileformComponent from './components/js/Settings';
+import PasswordComponent from './components/js/Password';
 
 const App = () => {
   const login = () => {
@@ -28,6 +31,26 @@ const App = () => {
       <SignupComponent />
     )
   } 
+  const profile = () => {
+    return(
+      <ProfileComponent />
+    )
+  }
+  const Dashboard = () => {
+    return(
+      <DashboardComponent />
+    )
+  }
+  const Settings = () => {
+    return(
+      <ProfileformComponent />
+    )
+  }
+  const password = () => {
+    return(
+      <PasswordComponent />
+    )
+  }
   const home = () => {
     return(
       <HomeComponent />
@@ -42,6 +65,10 @@ const App = () => {
     <Route path = "/home" component = {home} />
     <Route path = "/login" component = {login} />
     <Route path='/Signup' component ={Signup}/>
+    <Route path='/profile' component ={profile}/>
+    <Route path='/Dashboard' component ={Dashboard}/>
+    <Route path='/Settings' component ={Settings}/>
+    <Route path='/password' component ={password}/>
     <Redirect to = "/home" />
     </Switch>
     </BrowserRouter>

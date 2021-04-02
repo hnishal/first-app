@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Profiler } from 'react';
 import NavbarComponent from './Navbar';
 import CarouselComponent from './Carousel';
 import CardComponent from './Card';
@@ -7,7 +7,6 @@ import ListComponent from './TopSkills';
 import CardComponent3 from './HireCard';
 import ButtonComponent from './Button';
 import Footer from './Footer';
-
 const myStyle = {
     
     marginTop: "10%"
@@ -31,6 +30,7 @@ const HomeComponent = () => {
       <div><Footer /></div>
     </div>
     </div>
+    
     )
 }
 export default HomeComponent;
