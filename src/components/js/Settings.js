@@ -20,10 +20,9 @@ const ProfileformComponent = () => {
         <div className= "ml-5 pl-5 row mt-5 ">
             <div className= "mini-card col-lg-2 col-md-3 col-sm-3 ml-5">
         <Card>
-        <Button variant="outline-primary"  >Profile</Button>{' '}
-        <Button variant="outline-primary"  onClick={(event) =>{passwordurl(event)}}>Password</Button>{' '}
-        <Button variant="outline-primary"  onClick={(event) =>{paymenturl(event)}}>Payment and Finance</Button>{' '}
-        <Button variant="outline-primary"  onClick={(event) =>{accounturl(event)}}>Account</Button>{' '}
+        <Button  variant="dark" style={{color:"skyblue"}} >Profile</Button>{' '}
+        <Button className="mt-2" variant="dark" style={{color:"skyblue"}} onClick={(event) => { passwordurl(event) }}>Password</Button>{' '}
+        <Button className="mt-2" variant="dark" style={{color:"skyblue"}} onClick={(event) => { accounturl(event) }}>Account</Button>{' '}
 </Card>
 </div>
      <div className= "medium-card col-lg-8 col-md-6 col-sm-6 mr-5 ml-2">
@@ -74,7 +73,7 @@ const ProfileformComponent = () => {
         </Form.Group>
         <hr className="mt-4 "/>
 
-        <Button className="mt-2" variant="primary" type="submit">
+        <Button className="mt-2" style={{color:"skyblue"}} variant="dark" type="submit">
             Save Settings
         </Button>
         </Form>

@@ -6,16 +6,16 @@ import '../css/Profile.css';
 import Footer from './Footer';
 const ProfileComponent = () => {
     return <div class="overflow-hidden">
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto ml-5">
-                    <Nav.Link className="mr-3" href="#features">MY PROFILE</Nav.Link>
-                    <Nav.Link className="mr-3" href="#pricing">Improve Profile</Nav.Link>
-                    <Nav.Link className="mr-3" href="#pricing">My Services</Nav.Link>
-                    <Nav.Link className="mr-3" href="#pricing">Get Certified</Nav.Link>
-                    <Nav.Link className="mr-3" href="#pricing">Promote Profile</Nav.Link>
-                    <Nav.Link className="mr-3" href="#pricing">My Rewards</Nav.Link>
+                    <Nav.Link style={{color:"skyblue" }} className="mr-3" href="#features">MY PROFILE</Nav.Link>
+                    <Nav.Link style={{color:"skyblue" }} className="mr-3" href="#pricing">Improve Profile</Nav.Link>
+                    <Nav.Link style={{color:"skyblue" }} className="mr-3" href="#pricing">My Services</Nav.Link>
+                    <Nav.Link style={{color:"skyblue" }} className="mr-3" href="#pricing">Get Certified</Nav.Link>
+                    <Nav.Link style={{color:"skyblue" }} className="mr-3" href="#pricing">Promote Profile</Nav.Link>
+                    <Nav.Link style={{color:"skyblue" }} className="mr-3" href="#pricing">My Rewards</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -43,7 +43,7 @@ const ProfileComponent = () => {
                                  Front end web developer <br />
                                  compelete paragraph <br />
                         </div>
-                        <button style={{marginRight:"20%"}} className=" button btn btn-primary mr-5 ">Edit Profile</button>
+                        <button style={{marginRight:"20%", color:"skyblue"}} className=" button btn btn-dark mr-5 ">Edit Profile</button>
                     </div>
                 </Card>
             </div>
@@ -119,7 +119,7 @@ const ProfileComponent = () => {
                         </Form.Group>
                         <Form.Label>Summary</Form.Label>
                         <Form.Control type="text" placeholder="Describe your work experience" />
-                        <Button className="mt-2" variant="primary" type="submit">
+                        <Button style={{color:"skyblue" }} className="mt-2" variant="dark" type="submit">
                             Save
                         </Button>
 
@@ -139,7 +139,7 @@ const ProfileComponent = () => {
                                 <div className="d-flex">
                                <h5 >Top Skills</h5>
                                 
-                               <button style={{marginRight:"20%"}} className="ml-3 mb-1 btn btn-primary">Edit Skills</button>
+                               <button style={{marginRight:"20%", color:"skyblue"}} className="ml-3 mb-1 btn btn-dark">Edit Skills</button>
                                </div>
                                <hr className="mr-4"/>
                                <p><a className="design text-center" href="#" >Website Design</a></p>
@@ -189,7 +189,7 @@ const ProfileComponent = () => {
                             </Form.Group>
                             
                         </Form.Row>
-                        <Button className="mt-2" variant="primary" type="submit">
+                        <Button style={{color:"skyblue" }}className="mt-2 " variant="dark" type="submit">
                             Save
                         </Button>
 
@@ -231,7 +231,7 @@ const ProfileComponent = () => {
                         </Form.Row>
 
                         
-                        <Button className="mt-2" variant="primary" type="submit">
+                        <Button style={{color:"skyblue" }} className="mt-2" variant="dark" type="submit">
                             Save
                         </Button>
 
@@ -267,7 +267,7 @@ const ProfileComponent = () => {
                         </Form.Row>
 
                         
-                        <Button className="mt-2" variant="primary" type="submit">
+                        <Button style={{color:"skyblue" }} className="mt-2" variant="dark" type="submit">
                             Save
                         </Button>
 

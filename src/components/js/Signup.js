@@ -18,7 +18,7 @@ const SignupComponent =()=>{
                     <div class="form-check"><label class="form-check-label"><input class="form-check-input"
                                 type="checkbox"/>I agree to the license terms.</label></div>
                 </div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div>
+                <div class="form-group"><button class="btn btn-dark btn-block" style={{color:"skyblue"}}type="submit">Sign Up</button></div>
                 <div class="d-flex">
                 <p>Already have an account</p>
                 <a class=" ml-1 " href="./login"> Login here.</a>

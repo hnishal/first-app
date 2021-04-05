@@ -7,11 +7,11 @@ const ButtonComponent = () =>
             <div class="col-lg-12 ">
                 <div className="mb-5" >
                     <div className=" mb-2 align-center">
-                        <Button variant="primary" size="lg">
+                        <Button style={{color:"skyblue"}} variant="dark" size="lg">
                             Hire a Pro
     </Button>{' '}
                     </div>
-                    <Button variant="primary" size="lg">
+                    <Button style={{color:"skyblue"}} variant="dark" size="lg">
                         Apply to Open Roles
     </Button>
                 </div>

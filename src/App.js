@@ -14,6 +14,9 @@ import ProfileComponent from './components/js/Profile';
 import DashboardComponent from './components/js/Dashboard';
 import ProfileformComponent from './components/js/Settings';
 import PasswordComponent from './components/js/Password';
+import NavComponent from './components/js/Nav';
+import AccountComponent from './components/js/Account';
+
 const App = () => {
   const login = () => {
     return (
@@ -50,6 +53,16 @@ const App = () => {
       <HomeComponent />
     )
   }
+  const account = () => {
+    return(
+      <AccountComponent />
+    )
+  }
+  const nav = () => {
+    return(
+      <NavComponent />
+    )
+  }
   return(
 
     <div>
@@ -63,6 +76,8 @@ const App = () => {
     <Route path='/Dashboard' component ={Dashboard}/>
     <Route path='/Settings' component ={Settings}/>
     <Route path='/password' component ={password}/>
+    <Route path='/account' component={account}/>
+    <Route path="/nav" component={nav}/>
     <Redirect to = "/home" />
     </Switch>
     </BrowserRouter>

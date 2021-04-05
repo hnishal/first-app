@@ -6,15 +6,15 @@ import Footer from './Footer';
 const DashboardComponent = () => {
   return (
     <div className="mt-2 ">
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="dark" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto ml-5" >
-            <Nav.Link href="#myprojects">My Projects</Nav.Link>
-            <Nav.Link href="#dashboard">Dashboard</Nav.Link>
-            <Nav.Link href="#inbox">Inbox</Nav.Link>
-            <Nav.Link href="#feedback">Feedback</Nav.Link>
-            <Nav.Link href="#freecredit">Free Credit</Nav.Link>
+            <Nav.Link style={{color:"skyblue"}} href="#myprojects">My Projects</Nav.Link>
+            <Nav.Link style={{color:"skyblue"}} href="#dashboard">Dashboard</Nav.Link>
+            <Nav.Link style={{color:"skyblue"}} href="#inbox">Inbox</Nav.Link>
+            <Nav.Link style={{color:"skyblue"}} href="#feedback">Feedback</Nav.Link>
+            <Nav.Link style={{color:"skyblue"}} href="#freecredit">Free Credit</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -28,7 +28,7 @@ const DashboardComponent = () => {
                 <p className="mt-5 text-center">Start bidding on projects that meet your skills. </p>
               </Card.Text>
               <div class="text-center">
-                <Button variant="primary" className="m-auto" >Browse Projects</Button>
+                <Button style={{color:"skyblue"}} variant="dark" className="m-auto" >Browse Projects</Button>
               </div>
             </Card.Body>
           </Card>
@@ -43,9 +43,9 @@ const DashboardComponent = () => {
                 Set up your account
               </Card.Text>
               <div>
-                <ProgressBar animated now={45} />
+                <ProgressBar style={{color:"skyblue" }}  variant="dark" animated now={45} />
               </div>
-              <Button className="mt-3" variant="primary" >Add your address</Button>
+              <Button style={{color:"skyblue" }} className="mt-3" variant="dark" >Add your address</Button>
               <hr />
               <h8>Account Balance</h8>
               <p className="mt-2">₹0.00</p>

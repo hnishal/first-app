@@ -6,10 +6,6 @@ const PasswordComponent = () => {
         event.preventDefault();
         window.location = 'http://localhost:3000/Settings';
     }
-    function paymenturl(event) {
-        event.preventDefault();
-        window.location = 'http://localhost:3000/payment';
-    }
     function accounturl(event) {
         event.preventDefault();
         window.location = 'http://localhost:3000/account';
@@ -20,10 +16,9 @@ const PasswordComponent = () => {
             <div className="ml-5 pl-5 row mt-5  ">
                 <div className="mini-card col-lg-2 col-md-3 col-sm-3 ml-5">
                     <Card>
-                        <Button variant="outline-primary" onClick={(event) => { Settingsurl(event) }} >Profile</Button>{' '}
-                        <Button variant="outline-primary" >Password</Button>{' '}
-                        <Button variant="outline-primary" onClick={(event) => { paymenturl(event) }}>Payment and Finance</Button>{' '}
-                        <Button variant="outline-primary" onClick={(event) => { accounturl(event) }}>Account</Button>{' '}
+                        <Button variant="dark" style={{color:"skyblue"}} onClick={(event) => { Settingsurl(event) }} >Profile</Button>{' '}
+                        <Button className="mt-2" variant="dark" style={{color:"skyblue"}} >Password</Button>{' '}
+                        <Button className="mt-2" variant="dark" style={{color:"skyblue"}} onClick={(event) => { accounturl(event) }}>Account</Button>{' '}
                     </Card>
                 </div>
                 <div className="medium-card col-lg-8 col-md-6 col-sm-6 mr-5 ml-2">
@@ -48,7 +43,7 @@ const PasswordComponent = () => {
 
 
 
-                                <Button variant="primary" type="submit">
+                                <Button style={{color:"skyblue"}} variant="dark" type="submit">
                                     Save Settings
                                 </Button>
                             </Form>

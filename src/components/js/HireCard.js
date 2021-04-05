@@ -23,7 +23,7 @@ const CardComponent3 = () =>
                     </Card.Body>
                     <div className="text-center">
                         <Card.Body>
-                            <Button className="m-3 text-center" variant="primary ">Post a Contract Role</Button>
+                            <Button className="m-3 text-center" style={{color:"skyblue"}} variant="dark">Post a Contract Role</Button>
                         </Card.Body>
                     </div>
                 </Card>
@@ -42,7 +42,7 @@ const CardComponent3 = () =>
                     </Card.Body>
                     <div className="text-center">
                         <Card.Body>
-                            <Button className="text-center" className="m-3" variant="primary ">Post a Full-Time Role</Button>
+                            <Button className="text-center" className="m-3" style={{color:"skyblue"}} variant="dark">Post a Full-Time Role</Button>
                         </Card.Body>
                     </div>
                 </Card>
