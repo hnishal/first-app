@@ -2,14 +2,11 @@ import React from 'react';
 import { Form, Button, Col, Card } from 'react-bootstrap';
 import '../css/Settings.css';
 import Footer from './Footer';
+import NavComponent from './Nav';
 const ProfileformComponent = () => {
    function passwordurl(event) {
      event.preventDefault();
     window.location = 'http://localhost:3000/password';
-  }
-   function paymenturl(event) {
-    event.preventDefault();
-    window.location = 'http://localhost:3000/payment';
   }
    function accounturl(event) {
     event.preventDefault();
@@ -17,6 +14,9 @@ const ProfileformComponent = () => {
   }
     return ( 
       <div className="overflow-hidden ">
+        <div>
+          <NavComponent/>
+        </div>
         <div className= "ml-5 pl-5 row mt-5 ">
             <div className= "mini-card col-lg-2 col-md-3 col-sm-3 ml-5">
         <Card>

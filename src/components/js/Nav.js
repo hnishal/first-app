@@ -1,40 +1,26 @@
 import React from 'react';
-import Nav from './Nav'
+import {Nav,Navbar} from 'react-bootstrap';
 import '../css/Nav.css';
-const NavComponent = () => {
-    return (
-        <div>
-            <div>
-        <nav class=" nav-top navbar navbar-light navbar-expand-md sticky-top navigation-clean-button"
-            style={{height:"80px",backgroundColor:"#37434d", color:"#ffffff"}}>
-            <div class="container-fluid"><a class="navbar-brand color-white" href="#"><i
-                        class="fa fa-globe"></i>&nbsp; Free-to-Lance</a><button data-toggle="collapse" class="navbar-toggler"
-                    data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link active" style={{color:"#ffffff"}} href="#"><i
-                                    class="fa fa-home"></i>&nbsp;Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" style={{color:"#ffffff"}} href="#"><i
-                                    class="fa fa-wpexplorer"></i>&nbsp;Explore</a></li>
-                        <li class="nav-item"><a class="nav-link active" style={{color:"#ffffff"}} href="#"><i
-                                    class="fa fa-star-o"></i>&nbsp;Features</a></li>
-                        <li class="nav-item"><a class="nav-link active" style={{color:"#ffffff"}} href="#"><i
-                                    class="fa fa-user-circle-o"></i>&nbsp;Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link active" style={{color:"#ffffff"}} href="#"><i
-                                    class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-        </div>
-    )
-}
-
+const NavComponent=()=>{
+return(
+<div>
+<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Navbar.Brand href="#home" className="ml-5 mr-4">Free-To-Lance</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+  <a href="#"><i class="ml-4 fa fa-fw fa-search "></i> Browse</a> 
+  <a href="#"><i class="ml-4 fa fa-fw fa-briefcase "></i> My Projects</a> 
+  
+    </Nav>
+    <Nav>
+    <a href="#"><i class="fa fa-fw fa-bell mr-4 fa-lg mt-2" ></i></a>
+  <a href="#"><i class="fa fa-fw fa-commenting mr-4 fa-lg mt-2 "></i></a>   
+  <button class="btn btn-primary mr-5">Post a Project</button>
+  <a href="#"><i class="fa fa-fw fa-sign-in mr-5 pr-5 fa-lg mt-2">Signed</i></a>  
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+</div>
+)}
 export default NavComponent;
-
-
-
-
-

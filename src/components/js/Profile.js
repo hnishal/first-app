@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavDropdown, Card, Button, Form, Col } from 'react-bootstrap';
-import NavbarComponent from './Navbar';
+import { Nav, Navbar, Card, Button, Form, Col } from 'react-bootstrap';
 import image18 from '../../image/18.jpg';
 import '../css/Profile.css';
 import Footer from './Footer';
+import NavComponent from './Nav';
 const ProfileComponent = () => {
     return <div class="overflow-hidden">
-        <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
+         <div>
+        <NavComponent/>
+    </div>
+        {/* <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto ml-5">
@@ -18,7 +21,7 @@ const ProfileComponent = () => {
                     <Nav.Link style={{color:"skyblue" }} className="mr-3" href="#pricing">My Rewards</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
-        </Navbar>
+        </Navbar> */}
         <div className="row">
             <div className=" ml-2 col-lg-8  col-md-11  col-sm-11 col-xs-12 sm-mt-2">
                 <Card className="mt-5 pt-5 ml-5 pl-5">

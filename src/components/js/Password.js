@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button, Col, Card } from 'react-bootstrap';
 import Footer from './Footer';
+import NavComponent from './Nav';
 const PasswordComponent = () => {
     function Settingsurl(event) {
         event.preventDefault();
@@ -13,6 +14,9 @@ const PasswordComponent = () => {
 
     return (
         <div className="overflow-hidden">
+            <div>
+                <NavComponent/>
+            </div>
             <div className="ml-5 pl-5 row mt-5  ">
                 <div className="mini-card col-lg-2 col-md-3 col-sm-3 ml-5">
                     <Card>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {  Button, Card ,Accordion} from 'react-bootstrap';
 import Footer from './Footer';
+import NavComponent from './Nav';
 const AccountComponent = () => {
     function passwordurl(event) {
         event.preventDefault();
@@ -13,6 +14,9 @@ const AccountComponent = () => {
 
     return (
         <div className="overflow-hidden">
+            <div>
+                <NavComponent/>
+            </div>
             <div className="ml-5 pl-5 row mt-5 ">
                 <div className="mini-card col-lg-2 col-md-3 col-sm-3 ml-5">
                     <Card>
@@ -116,6 +120,7 @@ const AccountComponent = () => {
                                 <li>You will not be able to log back into the site</li>
                                 <li>More importantly - We'll miss you!</li>
                             </ul>
+
                             <button style={{color:"skyblue"}} className="btn btn-dark mt-4">Close My Account</button>
                                  </Card.Body>
                             </Accordion.Collapse>

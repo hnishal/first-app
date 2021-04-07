@@ -1,11 +1,4 @@
 import React from 'react';
-import NavbarComponent from './components/js/Navbar';
-import CarouselComponent from './components/js/Carousel';
-import CardComponent from './components/js/Card';
-import CardComponent2 from './components/js/DisableCard';
-import ListComponent from './components/js/TopSkills';
-import CardComponent3 from './components/js/HireCard';
-import ButtonComponent from './components/js/Button';
 import LoginComponent from './components/js/Login';
 import {BrowserRouter, Switch, Redirect, Route} from 'react-router-dom';
 import HomeComponent from './components/js/Home';
@@ -16,7 +9,7 @@ import ProfileformComponent from './components/js/Settings';
 import PasswordComponent from './components/js/Password';
 import NavComponent from './components/js/Nav';
 import AccountComponent from './components/js/Account';
-
+import MyProjects from './components/js/MyProjects';
 const App = () => {
   const login = () => {
     return (
@@ -63,6 +56,11 @@ const App = () => {
       <NavComponent />
     )
   }
+  const myprojects = () => {
+    return(
+      <MyProjects/>
+    )
+  }
   return(
 
     <div>
@@ -78,6 +76,7 @@ const App = () => {
     <Route path='/password' component ={password}/>
     <Route path='/account' component={account}/>
     <Route path="/nav" component={nav}/>
+    <Route path="/MyProjects" component={myprojects}/>
     <Redirect to = "/home" />
     </Switch>
     </BrowserRouter>

@@ -3,10 +3,15 @@ import { Navbar, Nav, Card, Button, ProgressBar } from 'react-bootstrap';
 import '../css/Dashboard.css';
 import image19 from '../../image/19.jpg';
 import Footer from './Footer';
+import NavComponent from './Nav';
 const DashboardComponent = () => {
   return (
-    <div className="mt-2 ">
-      <Navbar bg="dark" expand="lg">
+      <div >
+      <div>
+      <NavComponent/>
+      </div >
+      <div  className="mt-2 ">
+      {/* <Navbar bg="dark" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto ml-5" >
@@ -17,7 +22,7 @@ const DashboardComponent = () => {
             <Nav.Link style={{color:"skyblue"}} href="#freecredit">Free Credit</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+      </Navbar> */}
       <div className="row mr-auto ml-auto ml-5 pl-5 mt-5 pt-2 md-5 overflow-hidden" >
         <div className="col-lg-8 col-md-6 col-sm-6 col-xs-2 ">
           <Card>
@@ -54,11 +59,11 @@ const DashboardComponent = () => {
           </Card>
         </div>
       </div>
+      </div>
       <div className="mt-5 pt-5">
       <Footer  />
       </div>
     </div>
-
   )
 }
 export default DashboardComponent;
